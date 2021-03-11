@@ -6,11 +6,6 @@
         "depends": [
             "numcodecs/stdint_compat.h"
         ],
-        "extra_compile_args": [
-            "-msse2",
-            "-mavx2",
-            "-stdlib=libc++"
-        ],
         "include_dirs": [
             "numcodecs"
         ],
