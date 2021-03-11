@@ -4,7 +4,7 @@ from .abc import Codec
 
 
 cdef _doShuffle(const unsigned char[:] src, unsigned char[:] des, int element_size):
-    cdef int count, i, offset, byte_index
+    cdef int count, i, j, offset, byte_index
     count = len(src) // element_size
     for i in range(count):
         offset = i*element_size
@@ -16,7 +16,7 @@ cdef _doShuffle(const unsigned char[:] src, unsigned char[:] des, int element_si
 
 
 cdef _doUnshuffle(const unsigned char[:] src, unsigned char[:] des, int element_size):
-    cdef int count, i, offset, byte_index
+    cdef int count, i, j, offset, byte_index
     count = len(src) // element_size
     for i in range(element_size):
         offset = i*count

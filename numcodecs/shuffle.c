@@ -2244,17 +2244,17 @@ static PyObject *__pyx_codeobj__41;
  * 
  * 
  * cdef _doShuffle(const unsigned char[:] src, unsigned char[:] des, int element_size):             # <<<<<<<<<<<<<<
- *     cdef int count, i, offset, byte_index
+ *     cdef int count, i, j, offset, byte_index
  *     count = len(src) // element_size
  */
 
 static PyObject *__pyx_f_9numcodecs_7shuffle__doShuffle(__Pyx_memviewslice __pyx_v_src, __Pyx_memviewslice __pyx_v_des, int __pyx_v_element_size) {
   int __pyx_v_count;
   int __pyx_v_i;
+  int __pyx_v_j;
   int __pyx_v_offset;
   int __pyx_v_byte_index;
   PyObject *__pyx_v_e = NULL;
-  int __pyx_v_j;
   PyObject *__pyx_r = NULL;
   __Pyx_RefNannyDeclarations
   size_t __pyx_t_1;
@@ -2276,7 +2276,7 @@ static PyObject *__pyx_f_9numcodecs_7shuffle__doShuffle(__Pyx_memviewslice __pyx
 
   /* "numcodecs/shuffle.pyx":8
  * cdef _doShuffle(const unsigned char[:] src, unsigned char[:] des, int element_size):
- *     cdef int count, i, offset, byte_index
+ *     cdef int count, i, j, offset, byte_index
  *     count = len(src) // element_size             # <<<<<<<<<<<<<<
  *     for i in range(count):
  *         offset = i*element_size
@@ -2293,7 +2293,7 @@ static PyObject *__pyx_f_9numcodecs_7shuffle__doShuffle(__Pyx_memviewslice __pyx
   __pyx_v_count = __Pyx_div_Py_ssize_t(__pyx_t_1, __pyx_v_element_size);
 
   /* "numcodecs/shuffle.pyx":9
- *     cdef int count, i, offset, byte_index
+ *     cdef int count, i, j, offset, byte_index
  *     count = len(src) // element_size
  *     for i in range(count):             # <<<<<<<<<<<<<<
  *         offset = i*element_size
@@ -2413,7 +2413,7 @@ __pyx_t_7 = __pyx_memoryview_fromslice(__pyx_t_5, 1, (PyObject *(*)(char *)) __p
  * 
  * 
  * cdef _doShuffle(const unsigned char[:] src, unsigned char[:] des, int element_size):             # <<<<<<<<<<<<<<
- *     cdef int count, i, offset, byte_index
+ *     cdef int count, i, j, offset, byte_index
  *     count = len(src) // element_size
  */
 
@@ -2434,17 +2434,17 @@ __pyx_t_7 = __pyx_memoryview_fromslice(__pyx_t_5, 1, (PyObject *(*)(char *)) __p
  * 
  * 
  * cdef _doUnshuffle(const unsigned char[:] src, unsigned char[:] des, int element_size):             # <<<<<<<<<<<<<<
- *     cdef int count, i, offset, byte_index
+ *     cdef int count, i, j, offset, byte_index
  *     count = len(src) // element_size
  */
 
 static PyObject *__pyx_f_9numcodecs_7shuffle__doUnshuffle(__Pyx_memviewslice __pyx_v_src, __Pyx_memviewslice __pyx_v_des, int __pyx_v_element_size) {
   int __pyx_v_count;
   int __pyx_v_i;
+  int __pyx_v_j;
   int __pyx_v_offset;
   int __pyx_v_byte_index;
   PyObject *__pyx_v_e = NULL;
-  int __pyx_v_j;
   PyObject *__pyx_r = NULL;
   __Pyx_RefNannyDeclarations
   size_t __pyx_t_1;
@@ -2466,7 +2466,7 @@ static PyObject *__pyx_f_9numcodecs_7shuffle__doUnshuffle(__Pyx_memviewslice __p
 
   /* "numcodecs/shuffle.pyx":20
  * cdef _doUnshuffle(const unsigned char[:] src, unsigned char[:] des, int element_size):
- *     cdef int count, i, offset, byte_index
+ *     cdef int count, i, j, offset, byte_index
  *     count = len(src) // element_size             # <<<<<<<<<<<<<<
  *     for i in range(element_size):
  *         offset = i*count
@@ -2483,7 +2483,7 @@ static PyObject *__pyx_f_9numcodecs_7shuffle__doUnshuffle(__Pyx_memviewslice __p
   __pyx_v_count = __Pyx_div_Py_ssize_t(__pyx_t_1, __pyx_v_element_size);
 
   /* "numcodecs/shuffle.pyx":21
- *     cdef int count, i, offset, byte_index
+ *     cdef int count, i, j, offset, byte_index
  *     count = len(src) // element_size
  *     for i in range(element_size):             # <<<<<<<<<<<<<<
  *         offset = i*count
@@ -2603,7 +2603,7 @@ __pyx_t_7 = __pyx_memoryview_fromslice(__pyx_t_5, 1, (PyObject *(*)(char *)) __p
  * 
  * 
  * cdef _doUnshuffle(const unsigned char[:] src, unsigned char[:] des, int element_size):             # <<<<<<<<<<<<<<
- *     cdef int count, i, offset, byte_index
+ *     cdef int count, i, j, offset, byte_index
  *     count = len(src) // element_size
  */
 
